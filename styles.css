@@ -38,36 +38,59 @@ div#viewport {
 
 #header {
     top: 16px;
-    margin: 24px 0 0 10px;
     font-size: 13px;
     display: flex;
     justify-content: space-between;
     overflow: auto;
 }
 
+#topLeftLinks {
+    margin: 21px 0 0 10px;
+
+}
+
+#topRightLinks {
+    margin: 14px 0 0 10px;
+    padding-right: 30px;
+}
+
 .hLink {
     display: inline-block;
-    padding-left: 15px;
+    margin-left: 15px;
     color: #000;
     opacity: 0.75;
     text-decoration: none;
     font-size: 13px;
-}
-
-#topLeftLinks {
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 2px;
     text-align: left;
-    left: 0;
 }
 
-#topRightLinks {
-    text-align: right;
-    right: 0;
-    padding-right: 30px;
+#appsIcon {
+    outline: none;
+    background-image: url(images/icons.png);
+    background-position: -132px -38px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.55;
+    box-sizing: border-box;
+}
+
+#signIn {
+    opacity: 1;
+    cursor: default;
+    border: 1px solid #4285f4;
+    line-height: 28px;
+    padding: 0px 12px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(top, #4287fd, #4683ea);
+    color: #fff;
 }
 
 #logoArea {
     height: 233px;
-    margin-top: 49px;
+    margin-top: 40px;
     text-align: -webkit-center;
 }
 
@@ -78,16 +101,15 @@ div#viewport {
 }
 
 #searchForm {
-    margin-top: -4px;
-    top: 311px;
-    min-width: 980px;
-    width: 100%;
+    margin-top: -2px;
+    padding-left: 6px;
+    min-width: 978px;
 }
 
 #searchBar {
     display: flex;
-    padding: 14px 8px -1px 16px;
-    width: 482px;
+    padding: 0px 0px 0px 0px;
+    width: 484px;
     height: 44px;
     background: #fff;
     margin-left: auto;
@@ -108,9 +130,9 @@ div#viewport {
 #searchIcon {
     color: #9aa0a6;
     fill: currentColor;
-    line-height: 24px;
-    width: 24px;
-    height: 24px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 #searchTextBox {
@@ -133,8 +155,8 @@ div#viewport {
 }
 
 #searchMicBox {
-    margin-top: 12px;
-    padding-right: 12px;
+    margin-top: 10px;
+    padding-right: 16px;
     padding-left: 12px;
 }
 
@@ -200,14 +222,3 @@ div#viewport {
     text-decoration: none;
     font-size: 13px;
 }
-
-#botLeftLinks {
-    text-align: "left";
-    left: 0;
-}
-
-#botRightLinks {
-    text-align: "right";
-    right: 0;
-}
-
