@@ -1,11 +1,7 @@
-html {
-    display: block;
-    overflow-y: auto;
-}
-
 html, body {
     font-size:small;
     margin: 0;
+    height: 100%;
 }
 
 div {
@@ -28,34 +24,28 @@ body {
     margin: 0 auto;
 }
 
-.footer {
-    bottom: 0;
-    font-size: 10pt;
-    height: 41px;
-    position: absolute;
+#viewport {
+    min-height: 100%;
+    position: relative;
     width: 100%;
-    min-width: 980px;
-
 }
 
-#viewport {
+div#viewport {
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    width: 100%
 }
 
-#hbar {
+#header {
     top: 16px;
-    margin: 7px 0 0 10px;
+    margin: 24px 0 0 10px;
     font-size: 13px;
     display: flex;
     justify-content: space-between;
     overflow: auto;
 }
 
-.hlink {
+.hLink {
     display: inline-block;
     padding-left: 15px;
     color: #000;
@@ -64,18 +54,135 @@ body {
     font-size: 13px;
 }
 
-#top_left_links {
+#topLeftLinks {
     text-align: left;
     left: 0;
 }
 
-#top_right_links {
+#topRightLinks {
     text-align: right;
     right: 0;
     padding-right: 30px;
 }
 
-#fbar {
+#logoArea {
+    height: 233px;
+    margin-top: 49px;
+    text-align: -webkit-center;
+}
+
+#logo {
+    height: 92px;
+    width: 272px;
+    margin-top: 111px;
+}
+
+#searchForm {
+    margin-top: -4px;
+    top: 311px;
+    min-width: 980px;
+    width: 100%;
+}
+
+#searchBar {
+    display: flex;
+    padding: 14px 8px -1px 16px;
+    width: 482px;
+    height: 44px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+}
+
+#searchIconBox {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+#searchIcon {
+    color: #9aa0a6;
+    fill: currentColor;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+#searchTextBox {
+    width: 388px;
+    line-height: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#searchText {
+    display: inline-block;
+    border: none;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    font: 16px arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    width: 388px;
+}
+
+#searchMicBox {
+    margin-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#searchMic {
+    width: 24px;
+    height: 24px;
+}
+
+#searchButtonBox {
+    display: inline-block;
+    text-align: center;
+    padding-top: 18px;
+    min-width: 980px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.searchButtons {
+    margin: 11px 4px;
+    padding: 0 16px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #5f6368;
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    height: 36px;
+    line-height: 27px;
+    border-radius: 4px;
+    min-width: 54px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+.content {
+    padding-bottom: 41px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 10pt;
+    height: auto;
+    width: 100%;
+    min-width: 980px;
+    height: 41px;
+}
+
+#fBar {
     color: #222;
     line-height: 40px;
     font-size: 13px;
@@ -86,7 +193,7 @@ body {
     padding-right: 27px;
 }
 
-.flink {
+.fLink {
     display: inline-block;
     padding-left: 27px;
     color: #5f6368;
@@ -94,12 +201,12 @@ body {
     font-size: 13px;
 }
 
-#bot_left_links {
+#botLeftLinks {
     text-align: "left";
     left: 0;
 }
 
-#bot_right_links {
+#botRightLinks {
     text-align: "right";
     right: 0;
 }

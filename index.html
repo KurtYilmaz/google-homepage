@@ -4,47 +4,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Google</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <div class="ctr-p" id="viewport">
 
-      <div id="hbar">
-
-        <div id="top_left_links">
-          <a class="hlink" href="https://www.google.com/intl/en/about/?fg=1&utm_source=
-            google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-          <a class="hlink" href="https://store.google.com/?utm_source=hp_header&utm_medium=
-            google_oo&utm_campaign=GS100042">Store</a>
+      <div id="header">
+        <div id="topLeftLinks">
+          <a class="hLink" href="https://www.google.com/intl/en/about/?fg=1&utm_
+            source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+          <a class="hLink" href="https://store.google.com/?utm_source=hp_header&
+            utm_medium=google_oo&utm_campaign=GS100042">Store</a>
+          <a class="hLink" href="https://www.theodinproject.com/lessons/html-css">
+            Assignment Description</a>
+          <a class="hLink" href="https://www.theodinproject.com">The Odin
+            Project</a>
         </div>
 
-        <div id="top_right_links">
-          <a class="hlink" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-          <a class="hlink" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
-          <a class="hlink" href="#" onclick="return false;">Apps</a>
-          <a class="hlink" href="#" onclick="return false;">GA</a>
+        <div id="topRightLinks">
+          <a class="hLink" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+          <a class="hLink" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">
+            Images</a>
+          <a class="hLink" href="#" onclick="return false;">Apps</a>
+          <a class="hLink" href="#" onclick="return false;">GA</a>
         </div>
 
       </div>
 
-      <div class="footer">
-
-        <div id="fbar">
-
-          <div id="bot_left_links">
-            <a class="flink" href="https://mail.google.com/mail/?tab=wm&ogbl">Advertising</a>
-            <a class="flink" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_
-              hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=
-              google_hpbfooter&fg=1#?modal_active=none">Business</a>
-            <a class="flink" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+      <div class="content" id="main">
+        <div id="logoArea">
+          <a href="https://www.google.com/search?sxsrf=ACYBGNRM5BKaFtz
+            c8ImQVtc84KPha98qww:1569634276955&q=Google&oi=ddle&ct=119276371&hl=
+            en&kgmid=/m/045c7b&sa=X&ved=0ahUKEwj9_4Gsr_LkAhUGTt8KHYN1CbIQPQgO">
+            <img alt="Google" id="logo" src="/images/google.png">
+          </a>
+        </div>
+        <div id="searchForm">
+          <div id="searchBar">
+            <div id="searchIconBox">
+              <svg id="searchIcon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1
+                   0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 
+                   19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 
+                   14 9.5 11.99 14 9.5 14z">
+                </path>
+              </svg>
+            </div>
+            <div id="searchTextBox">
+              <form>
+                <input type="text" id="searchText">
+              </form>
+            </div>
+            <div id="searchMicBox">
+              <img id="searchMic" alt="Search with Google" src="/images/googlemic_color_24dp.png">
+            </div>
           </div>
+          <div id="searchButtonBox">
+            <input type="button" class="searchButtons" value="Google Search">
+            <input type="button" class="searchButtons" value="I'm Feeling Lucky">
+          </div>
+        </div>
+      </div>
 
-          <div id="bot_right_links">
-            <a class="flink" href="https://policies.google.com/privacy?fg=1">Privacy</a>
-            <a class="flink" href="https://policies.google.com/terms?fg=1">Terms</a>
-            <a class="flink" href="#" onclick="return false;">Settings</a>
+      <div id="footer">
+        <div id="fBar">
+          <div id="botLeftLinks">
+            <a class="fLink" href="https://mail.google.com/mail/?tab=wm&ogbl">
+              Advertising</a>
+            <a class="fLink" href="https://www.google.com/services/?subid=ww-ww-
+              et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral
+              &utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+            <a class="fLink" href="https://google.com/search/howsearchworks/?fg=1">
+              How Search works</a>
+          </div>
+          <div id="botRightLinks">
+            <a class="fLink" href="https://policies.google.com/privacy?fg=1">Privacy</a>
+            <a class="fLink" href="https://policies.google.com/terms?fg=1">Terms</a>
+            <a class="fLink" href="#" onclick="return false;">Settings</a>
           </div>
         </div>
       </div>
